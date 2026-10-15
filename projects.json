@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Student Portfolio Website",
+    "description": "A responsive personal website introducing my background, skills, and sample work.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "role": "Student developer",
+    "screenshot": "portfolio-preview.png",
+    "link": "#"
+  },
+  {
+    "title": "Java Programming Exercises",
+    "description": "A collection of beginner Java exercises practicing input, conditions, loops, and methods.",
+    "technologies": ["Java"],
+    "role": "Student programmer",
+    "screenshot": "java-exercises.png",
+    "link": "#"
+  },
+  {
+    "title": "Networking Fundamentals Notes",
+    "description": "A learning resource covering the OSI model, network devices, and basic IP concepts.",
+    "technologies": ["Networking", "OSI Model"],
+    "role": "Student researcher",
+    "screenshot": "networking-notes.png",
+    "link": "#"
+  }
+]

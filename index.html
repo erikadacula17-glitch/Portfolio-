@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Babes Pascua, a BS Information Technology student.">
+  <title>Babes Pascua | Student Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">BP<span>.</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+        <a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section container">
+      <div class="hero-copy">
+        <p class="eyebrow">BS INFORMATION TECHNOLOGY STUDENT</p>
+        <h1>Hello, I'm <span>Babes Pascua.</span></h1>
+        <p class="tagline">Aspiring IT Professional <span class="accent">|</span> Lifelong Learner</p>
+        <p class="intro">I'm an Information Technology student who enjoys learning about programming, networking, and technology. I'm building my skills one project at a time.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View My Projects</a>
+          <a class="button secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="profile-wrap">
+        <div class="profile-placeholder" aria-label="Profile photo placeholder">BP</div>
+        <p class="photo-note">Replace this circle with your profile photo if you wish.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">GET TO KNOW ME</p><h2>About <span>Me</span></h2>
+        <div class="about-grid">
+          <p>I'm a student at Nueva Vizcaya State University, Bambang Campus, taking a Bachelor of Science in Information Technology. I value creativity, teamwork, and continuous learning. My goal is to strengthen my technical foundation and use technology to solve real-world problems.</p>
+          <div class="info-card">
+            <p><strong>Education</strong><br>Nueva Vizcaya State University – Bambang Campus</p>
+            <p><strong>Program</strong><br>Bachelor of Science in Information Technology</p>
+            <p><strong>Career Goal</strong><br>Grow into a skilled and responsible IT professional.</p>
+            <p><strong>Interests</strong><br>Programming, networking, music, singing, and dancing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <p class="eyebrow">WHAT I'M LEARNING</p><h2>My <span>Skills</span></h2>
+      <div class="skills-grid">
+        <article class="skill-card"><div class="skill-icon">⌘</div><h3>Programming</h3><p>HTML, CSS, JavaScript, and Java fundamentals.</p></article>
+        <article class="skill-card"><div class="skill-icon">⌁</div><h3>Networking</h3><p>Networking basics, IP addresses, and the OSI model.</p></article>
+        <article class="skill-card"><div class="skill-icon">▤</div><h3>Tools &amp; Technologies</h3><p>Visual Studio Code, Git, GitHub, and browser developer tools.</p></article>
+        <article class="skill-card"><div class="skill-icon">✦</div><h3>Soft Skills</h3><p>Teamwork, communication, creativity, and willingness to learn.</p></article>
+      </div>
+      <p class="small-note">Edit these skills to match what you have actually learned and can demonstrate.</p>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">WHAT I'VE BEEN WORKING ON</p><h2>My <span>Projects</span></h2>
+        <p class="section-lead">These are sample student projects. Replace descriptions, screenshots, and links with your real work before submitting.</p>
+        <div id="project-list" class="projects-grid" aria-live="polite"><p>Loading projects…</p></div>
+        <div class="github-panel">
+          <div><p class="eyebrow">LIVE DATA</p><h3>Latest GitHub Repositories</h3></div>
+          <p id="github-status" class="small-note">Enter your GitHub username in js/script.js to load your public repositories.</p>
+          <ul id="github-repos" class="repo-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <p class="eyebrow">LET'S CONNECT</p><h2>Contact <span>Me</span></h2>
+      <div class="contact-grid">
+        <div><p>Have a question or want to work on a project together? Send a message using the form.</p>
+          <div class="contact-links">
+            <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/" target="_blank" rel="noopener">Visit GitHub</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/" target="_blank" rel="noopener">Visit LinkedIn</a></p>
+          </div>
+          <p class="small-note">Replace the example email and links. Only publish contact details you're comfortable sharing.</p>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" required>
+          <label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Write your message…" required></textarea>
+          <button class="button primary" type="submit">Send Message</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+          <p class="small-note">Demo only: this static form does not send email or store messages.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container"><p>© <span id="year"></span> Babes Pascua. Built with HTML, CSS &amp; JavaScript.</p><a href="#home">Back to top ↑</a></div></footer>
+</body>
+</html>
